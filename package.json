@@ -5,11 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo 'There is no spoon!'",
-    "serve": "node src/index.js",
-    "start": "pm2 start src/index.js --name Sample",
+    "start": "pm2 start src/index.js --name Sample --watch --time",
     "stop": "pm2 stop Sample",
     "reload": "pm2 reload Sample",
-    "logs": "pm2 logs Sample"
+    "logs": "pm2 logs Sample",
+    "serve": "node src/index.js"
   },
   "repository": {
     "type": "git",
