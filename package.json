@@ -1,11 +1,14 @@
 {
   "name": "sample",
   "version": "1.0.0",
-  "description": "sample site",
-  "main": "index.js",
+  "description": "Sample site",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node &",
-    "test": "echo 'There is no spoon!'"
+    "test": "echo 'There is no spoon!'",
+    "serve": "node src/index.js",
+    "start": "pm2 start src/index.js --name Sample",
+    "stop": "pm2 stop Sample",
+    "logs": "pm2 logs Sample"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/ygally/sample#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pm2": "^5.3.1"
   }
 }
