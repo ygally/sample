@@ -8,6 +8,7 @@
     "serve": "node src/index.js",
     "start": "pm2 start src/index.js --name Sample",
     "stop": "pm2 stop Sample",
+    "reload": "pm2 reload Sample",
     "logs": "pm2 logs Sample"
   },
   "repository": {
