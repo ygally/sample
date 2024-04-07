@@ -7,7 +7,7 @@ RUN npm install pm2@latest --global
 WORKDIR /app
 COPY . .
 
-RUN npm install
+RUN npm install --omit=dev
 
 CMD ["npm", "run", "serve"]
 
