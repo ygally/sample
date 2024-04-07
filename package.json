@@ -4,7 +4,8 @@
   "description": "Sample site",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo 'There is no spoon!'",
+    "ftest": "echo 'There is no spoon!'",
+    "test": "mocha",
     "start": "pm2 start src/index.js --name Sample --watch --time",
     "stop": "pm2 stop Sample",
     "reload": "pm2 reload Sample",
@@ -27,5 +28,8 @@
   "homepage": "https://github.com/ygally/sample#readme",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0"
   }
 }
