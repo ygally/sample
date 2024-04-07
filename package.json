@@ -4,12 +4,14 @@
   "description": "Sample site",
   "main": "src/index.js",
   "scripts": {
-    "ftest": "echo 'There is no spoon!'",
-    "test": "mocha",
     "start": "pm2 start src/index.js --name Sample --watch --time",
     "stop": "pm2 stop Sample",
     "reload": "pm2 reload Sample",
     "logs": "pm2 logs Sample",
+    "ftest": "echo 'There is no spoon!'",
+    "test": "mocha",
+    "test200": "bash bin/sampleIsUp.sh",
+    "testOff": "bash bin/sampleIsDown.sh",
     "serve": "node src/index.js"
   },
   "repository": {
