@@ -26,12 +26,12 @@ Go there to see it : http://localhost:3000/
 
 `docker build -t sample:latest .`
 
-`docker tag sample:latest localhost:5000/sample:latest`
+`docker tag sample:latest localhost:5000/cybion/sample:latest`
 
-`docker push localhost:5000/sample:latest`
+`docker push localhost:5000/cybion/sample:latest`
 
 # Run Docker Image
 
-`docker run -dp 127.0.0.1:8090:3000 --rm --name Sample localhost:5000/sample:latest`
+`docker run -dp 127.0.0.1:8090:3000 --rm --name Sample localhost:5000/cybion/sample:latest`
 
 Go there to see it : http://localhost:8090/
